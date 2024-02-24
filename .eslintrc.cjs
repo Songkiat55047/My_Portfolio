@@ -3,6 +3,7 @@ module.exports = {
   env: { browser: true, es2020: true },
   extends: [
     'eslint:recommended',
+    'plugins:react',
     'plugin:react/recommended',
     'plugin:react/jsx-runtime',
     'plugin:react-hooks/recommended',
@@ -12,6 +13,8 @@ module.exports = {
   settings: { react: { version: '18.2' } },
   plugins: ['react-refresh'],
   rules: {
+    'react/jsx-uses-react': 'error',   
+    'react/jsx-uses-var': 'error', 
     'react/jsx-no-target-blank': 'off',
     'react-refresh/only-export-components': [
       'warn',
